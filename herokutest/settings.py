@@ -124,3 +124,5 @@ STATIC_URL = '/static/'
 import django_heroku
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+TEST_SETTINGS = os.environ.get('TEST_SETTINGS', 'default value for test settings')
