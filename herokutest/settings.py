@@ -125,4 +125,5 @@ import django_heroku
 # Activate Django-Heroku.
 django_heroku.settings(locals())
 
-TEST_SETTINGS = os.environ.get('TEST_SETTINGS', 'default value for test settings')
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '')
+OPEN_WEATHER_API_TOKEN = os.environ.get('OPEN_WEATHER_API_TOKEN', '')
